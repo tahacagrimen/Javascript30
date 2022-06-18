@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+
+<body>
+    <script>
+        let arr = []
+        let code = "taha"
+        window.addEventListener("keyup", (e) => {
+            arr.push(e.key)
+            arr.splice(-code.length - 1, arr.length - code.length)
+            if (arr.join("").includes(code)) {
+                cornify_add()
+            }
+        })
+
+    </script>
+</body>
+
+</html>
